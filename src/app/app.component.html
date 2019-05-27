@@ -1,4 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<!-- // 这里'APP_TITLE' 就是assets/i18n文件夹各个json文件中对应的key -->
+<h1> {{ 'APP_TITLE' | translate }} </h1>
+
+<button (click)="selectLanguage('zh-CN')">中文简体</button>
+<button (click)="selectLanguage('zh-TW')">中文繁體</button>
+<button (click)="selectLanguage('en-US')">English</button>
+
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
