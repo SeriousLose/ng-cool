@@ -19,11 +19,17 @@ export class AppComponent {
     this.translate.use(currentLanguage);
     // 记录当前设置的语言
     localStorage.setItem("currentLanguage", currentLanguage);
+
+    //订阅语言切换事件
+    this.translate.onLangChange.subscribe(params => {
+      // do something
+      console.log('11111111');
+    });
   }
 
   public selectLanguage(lang) {
     this.translate.use(lang);
     // 更新当前记录的语言
-    localStorage.setItem('currentLanguage', lang)
+    localStorage.setItem("currentLanguage", lang);
   }
 }
