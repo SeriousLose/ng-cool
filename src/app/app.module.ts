@@ -7,13 +7,16 @@ import { AppComponent } from "./app.component";
 import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { DebounceClickDirective } from "./framework/directive/debounce-click.directive"; // 防止连点
+import { UserHttpService } from "./framework/http/http";
+import { ApiRequestService } from "./framework/services/api.server";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, DebounceClickDirective],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,7 +29,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     })
   ],
-  providers: [],
+  providers: [UserHttpService,ApiRequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

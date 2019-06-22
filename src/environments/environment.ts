@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false, // 开发模式
+  serverUrl: 'http://localhost:4200', // 服务url
+  locationorigin:'http://localhost:4200', // 开发url
+  httpBaseUri: 'http://localhost:4200', // 基础url
 };
 
 /*
