@@ -25,7 +25,7 @@ export function formatTime(time: any, format?: any) {
 }
 
 export function throttle(func: any, wait: any, mustRun: any) {
-  let timeout;
+  let timeout:any;
   let startTime = new Date();
   return function() {
     const self = this;

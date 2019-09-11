@@ -1,0 +1,79 @@
+.
+├── README.md
+├── angular.json
+├── build
+├── dist
+│   └── longAngular
+│       ├── 3rdpartylicenses.txt
+│       ├── favicon.ico
+│       ├── index.html
+│       ├── main.js
+│       ├── main.js.map
+│       ├── polyfills.js
+│       ├── polyfills.js.map
+│       ├── runtime.js
+│       ├── runtime.js.map
+│       ├── styles.js
+│       ├── styles.js.map
+│       ├── vendor.js
+│       └── vendor.js.map
+├── e2e
+│   ├── protractor.conf.js
+│   ├── src
+│   │   ├── app.e2e-spec.ts
+│   │   └── app.po.ts
+│   └── tsconfig.e2e.json
+├── mock
+├── package-lock.json
+├── package.json
+├── src
+│   ├── app
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.less
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── components
+│   │   ├── framework
+│   │   │   ├── components
+│   │   │   ├── directive
+│   │   │   │   └── debounce-click.directive.ts
+│   │   │   ├── http
+│   │   │   ├── pipe
+│   │   │   ├── public
+│   │   │   │   ├── css
+│   │   │   │   ├── js
+│   │   │   │   │   └── common.ts
+│   │   │   │   └── tools
+│   │   │   └── services
+│   │   └── pags
+│   ├── assets
+│   │   ├── css
+│   │   │   └── reset.less
+│   │   ├── fonts
+│   │   ├── i18n
+│   │   │   ├── en-US.json
+│   │   │   ├── zh-CN.json
+│   │   │   └── zh-TW.json
+│   │   ├── images
+│   │   └── themes
+│   ├── browserslist
+│   ├── environments
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── karma.conf.js
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles.less
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── tslint.json
+├── tree.txt
+├── tsconfig.json
+└── tslint.json
+
+

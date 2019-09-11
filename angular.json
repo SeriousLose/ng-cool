@@ -36,7 +36,12 @@
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "with": "src/environments/environment.prod.ts",
+                  "dev": "src/environments/environment.ts",
+                  "test": "src/environments/environment.test.ts",
+                  "uat": "src/environments/environment.uat.ts",
+                  "prod": "src/environments/environment.prod.ts",
+                  "local": "src/environments/environment.local.ts"
                 }
               ],
               "optimization": true,

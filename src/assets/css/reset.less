@@ -1,0 +1,397 @@
+/* 设置清除默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 去除ios按钮长按灰色 */
+html,
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* 清除内外边距 */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+}
+
+/* 设置默认字体 */
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,
+button,
+input,
+select,
+textarea {
+  /* for ie */
+  /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+  font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+/* 设置字体 */
+body {
+  font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 18px;
+  /* 18px / 12px = 1.5 */
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  border: none;
+}
+
+/* 一致的 del 样式 */
+del {
+  text-decoration: line-through;
+}
+
+/* 将斜体扶正 */
+code,
+kbd,
+pre,
+samp,
+tt {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* 统一等宽字体 */
+small {
+  font-size: 12px;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+/* 统一上标和下标 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 重置文本格式元素 */
+
+ins,
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+  display: block;
+}
+
+abbr[title],
+acronym[title] {
+  /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* 去掉 firefox 下此元素的边框 */
+/* abbr,acronym{
+	border:0;font-variant:normal;
+} */
+
+q:before,
+q:after {
+  content: "";
+}
+
+/* 重置表单元素 */
+
+legend {
+  color: #000;
+}
+
+/* IE bug fixed: th 不继承 text-align*/
+th {
+  text-align: inherit;
+}
+
+/* for ie6 */
+
+fieldset,
+img {
+  border: none;
+}
+
+/* img 搭车：让链接里的 img 无边框 */
+
+/* 注：optgroup 无法扶正 */
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  empty-cells: show;
+  border-collapse: collapse;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,
+th {
+  text-align: left;
+}
+
+/* 重置 hr */
+hr {
+  border: none;
+  height: 1px;
+}
+
+/*input默认样式*/
+input {
+  outline: none;
+  border: none;
+}
+
+/* 去除input number上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* 改变input placeholder的颜色 */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #000000;
+  opacity: 0.4;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #000000;
+  opacity: 0.4;
+}
+
+input:-ms-input-placeholder {
+  color: #000000;
+  opacity: 0.4;
+}
+
+input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 0.4;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+/* 清除浮动 */
+.fl-clearfloat:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+
+}
+
+.fl-clearfloat {
+  zoom: 1;
+  /* for IE6 IE7 */
+}
+
+.fl-left {
+  float: left;
+}
+
+.fl-right {
+  float: right;
+}
+
+/*  小手样式 */
+.cursor {
+  cursor: pointer;
+}
+
+/* 设置透明 */
+.fl-opacity {
+  opacity: 0;
+}
+
+/* 去除百度logo与左下角文字 */
+.anchorBL {
+  display: none;
+}
+
+/* 单行文本溢出 */
+.fl-ellipsis-one {
+  overflow: hidden;
+  /* 文本溢出显示省略号 */
+  text-overflow: ellipsis;
+  /* 文本不会换行（单行文本溢出) */
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* 多行文本出现省略号 */
+.fl-ellipsis-many {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  -webkit-line-clamp: 2;
+  /* 该注释的内容不可随意修改,解决webpack打包后省略号不显示问题 */
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+
+/* 多行文本出现省略号 模拟写法(兼容写法) */
+.fl-ellipsis-imitate {
+  position: relative;
+  line-height: 1.4em;
+  height: 2.8em;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fl-ellipsis-imitate:after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 20px;
+  background: -webkit-linear-gradient(left, transparent, #fff 62%);
+  background: -o-linear-gradient(right, transparent, #fff 62%);
+  background: -moz-linear-gradient(right, transparent, #fff 62%);
+  background: linear-gradient(to right, transparent, #fff 62%);
+}
+
+/* 去除滚动条 */
+.fl-noscroll-bar {
+  /* Firefox  */
+  scrollbar-width: none;
+}
+
+/* chrome */
+.fl-noscroll-bar::-webkit-scrollbar {
+  display: none;
+}
